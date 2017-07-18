@@ -1,0 +1,138 @@
+body {
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+}
+ul {
+    list-style: none;
+}
+.blind-item div {
+    display: inline-block;
+}
+.min-max-height-label, .min-max-width-label {
+    font-weight: bold;
+}
+#final-price-wrapper {
+    font-weight: bold;
+}
+button{
+	
+}
+
+button:hover{
+    background-color: #319214;
+}
+
+input{
+	border: 0;
+    height: 2.5rem;
+    width: 16rem;
+    padding: 0 .5rem;
+    box-sizing: border-box;
+    border-radius: .2rem;
+    font-size: 1rem;
+    color: #444;
+    border: 1px solid #ccc;
+    margin: 3px;
+}
+
+#unit,#version{
+	border: 0;
+    height: 2.5rem;
+    width: 16rem;
+    padding: 0 .5rem;
+    box-sizing: border-box;
+    border-radius: .2rem;
+    font-size: 1rem;
+    color: #444;
+    border: 1px solid #ccc;
+    margin: 6px;
+}
+.sg-title {
+	font-size: 3rem;
+	font-weight: 400;
+	color: #000;
+	/*text-shadow: .075rem .075rem .1rem rgba(0,0,0,.7);*/
+}
+#blind-list{
+text-align: content: '';
+}
+
+.IndiegogoBtn,.add-item-button,.calc-button{
+	background-color: #38a817;
+    height: 3rem;
+    width: 20rem;
+    border-radius: 3rem;
+    border: 0;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all .2s;
+    outline: 0;
+   cursor: pointer;
+    font-weight: 600;
+    flex-shrink: 0;
+    margin: 3px;
+}
+
+.btn-delete{
+		display: inline-block;
+        white-space: nowrap;
+        background: #f44;
+        border: 0;
+        box-shadow: none;
+        border-radius: 3rem;
+        color: #fff;
+        text-shadow: none;
+        font-weight: 400;
+        font-size: 1.1rem;
+        cursor: pointer;
+        padding: 0.5rem 2rem;
+        margin: 0.5em;
+}
+ 
+.btn-delete:hover
+{
+        background-color: #f22;
+        transition: 0.3s linear background-color;
+
+}
+ 
+.btn-delete:active
+{
+        -moz-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+        -webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+        box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+        position: relative;
+        top: 1px;
+}
+.btn-delete:focus
+{
+        outline: 0;
+        background: #fafafa;
+}    
+.btn-delete:before
+{
+        background: #ccc;
+        background: rgba(0,0,0,.1);
+        float: left;
+        width: 1em;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0 1em 0 -1em;
+        padding: 0 .2em;
+        -moz-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+        -webkit-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+        box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+        -moz-border-radius: .15em 0 0 .15em;
+        -webkit-border-radius: .15em 0 0 .15em;
+        border-radius: .15em 0 0 .15em;
+}
+.add-item-button{
+	margin-bottom: 50px;
+}
+tr{
+    margin: auto;   
+    border: 1px solid black;
+}

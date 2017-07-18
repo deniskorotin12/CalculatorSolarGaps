@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Calc JS</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <span class="sg-title">SOLARGAPS BLINDS PRICE CALCULATOR</span>
+        <div>
+			<label>Units of measurement</label>
+			<select name="unit" id="unit">
+				<option value="ft">Inches</option>
+				<option value="m">Centimeter</option>
+			</select>
+            <label>Version</label>
+            <select name="version" id="version">
+                <option value="standart">Standard</option>
+                <option value="light">Light</option>
+            </select>
+		</div>
+
+        <div>
+            Blinds options: min/max width : <span class="min-max-width-label"></span> <span class="unit-label"></span>
+            and min/max height: <span class="min-max-height-label"></span> <span class="unit-label"></span>
+        </div>
+        </br>
+        <table id="firstChek" style="text-align: center; margin: 0 auto">
+        <thead>
+            <tr>
+                <th>Width</th>
+                <th>Height</th>
+                <th>Сount</th>
+                <th>Area</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="blind-list">
+        <tr class="blind-item">
+                <td class="width-wrapper">
+                    <input type="number" class="item-width" onchange="checkValue(event)">
+                </td>
+                <td class="height-wrapper">
+                    <input type="number" class="item-height" onchange="checkValue(event)">
+                </td>
+                <td class="count-wrapper">
+                    <input type="number" class="item-count" min="1" max="9999" value="1" onchange="checkValue(event)">
+                </td>
+                <td class="squere-wrapper">
+                   <span class="square"></span> (<span class="unit-label"></span> <sup style="font-weight: bold;">2</sup>)
+                </td>
+                <td class="price-wrapper">
+                     $<span class="price"></span>
+                </td>
+                <td></td>
+        </tr>
+        </tbody>
+        </table>
+
+        <button onclick="addItem()" class="add-item-button">Add item</button>
+
+        <button onclick="calculate()" class="calc-button">Calculate subtotal</button>
+
+        <div id="final-price-wrapper" style="display: none; margin: 20px;">
+            Subtotal price : <span id="final-price"></span></br>
+           <a href="https://www.indiegogo.com/projects/solargaps-energy-generating-smart-solar-blinds#/" target="_blac"><button class = "IndiegogoBtn" style="margin-bottom: 50px">To Order</button></a>
+        </div>
+       
+        <script src="js/app.js"></script>
+    </body>
+</html>
